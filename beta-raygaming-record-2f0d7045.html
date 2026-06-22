@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雷竞技 · 持续关注你的游戏时刻</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* 分隔线增加呼吸感 */
+        .section {
+            margin-top: 4rem;
+        }
+
+        .section:first-of-type {
+            margin-top: 0;
+        }
+
+        /* hero */
+        .hero {
+            padding: 3.5rem 0 2rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #929292;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-title {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #111;
+        }
+
+        .hero-sub {
+            margin-top: 1.4rem;
+            font-size: 1.05rem;
+            color: #555;
+            max-width: 580px;
+        }
+
+        /* 通用标题 */
+        .heading {
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.2rem;
+            color: #181818;
+        }
+
+        .heading-sm {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            margin-bottom: 0.6rem;
+            color: #222;
+        }
+
+        .text-muted {
+            color: #5a5a5a;
+        }
+
+        .text-sm {
+            font-size: 0.95rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        a {
+            color: #1a5c9e;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: #1a5c9e;
+        }
+
+        /* 卡片区 – 优势 */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border: 1px solid #e6e6e6;
+            border-radius: 12px;
+            padding: 1.4rem 1.2rem;
+            transition: box-shadow 0.2s, transform 0.1s;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+        }
+
+        .feature-card h3 {
+            font-size: 1rem;
+            font-weight: 550;
+            margin-bottom: 0.3rem;
+            color: #1a1a1a;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: #5a5a5a;
+            margin-bottom: 0;
+        }
+
+        /* FAQ 摘要 */
+        .faq-item {
+            border-bottom: 1px solid #ececec;
+            padding: 1rem 0;
+        }
+
+        .faq-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            color: #202020;
+        }
+
+        .faq-a {
+            color: #5a5a5a;
+            font-size: 0.95rem;
+            margin-left: 0.5rem;
+        }
+
+        /* 底部 */
+        .footer-note {
+            margin-top: 4rem;
+            border-top: 1px solid #eaeaea;
+            padding: 1.5rem 0 2rem;
+            font-size: 0.85rem;
+            color: #7a7a7a;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .footer-links span {
+            margin-right: 1.2rem;
+        }
+
+        .footer-links a {
+            color: #555;
+            border-bottom: none;
+        }
+
+        .footer-links a:hover {
+            color: #1a5c9e;
+            border-bottom: 1px solid #1a5c9e;
+        }
+
+        /* 响应 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem 1.2rem;
+            }
+
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .hero {
+                padding: 2rem 0 1.5rem;
+            }
+
+            .heading {
+                font-size: 1.4rem;
+            }
+
+            .footer-note {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .footer-links span {
+                margin-right: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero-eyebrow">再次光临 · 收藏此刻</div>
+            <h1 class="hero-title">你总能找到<br>重返的理由</h1>
+            <div class="hero-sub">
+                有些地方你只去一次，有些地方你总想回来。<br>
+                <a href="https://beta-raygaming.com">雷竞技</a> 正在成为后一种。
+            </div>
+        </section>
+
+        <!-- 优势区 -->
+        <section class="section">
+            <h2 class="heading">为什么反复回来？</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>不打扰的节奏</h3>
+                    <p>没有刺眼弹窗，没有紧迫倒计时。你按自己的步调浏览、收藏、对比。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>信息一目了然</h3>
+                    <p>赛程、数据、回顾——结构干净，重点恰好在你需要的位置。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>收藏即是提醒</h3>
+                    <p>标记你关心的赛事，下次打开时，变化自然呈现。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>持续微调</h3>
+                    <p>界面和体验在慢慢打磨，每次回来都可能发现一点不同。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 说明区：收藏与持续关注 -->
+        <section class="section">
+            <h2 class="heading">收藏，不只是书签</h2>
+            <p>
+                我们常常收藏一个页面，然后忘记它。但有些页面值得你时不时点开——
+                不是因为推送，而是因为那里有持续更新的内容，以及你曾经投入过的注意。
+            </p>
+            <p>
+                <a href="https://beta-raygaming.com">雷竞技</a> 希望成为这样的地方：
+                没有过度的留存手段，只靠内容本身的吸引力让你愿意再次输入网址，
+                或是在书签文件夹里多停留一秒。
+            </p>
+            <div class="heading-sm">如果你刚离开不久</div>
+            <p>
+                也许你之前看过两场比赛、查过一次数据，或者只是随手点开。
+                再次回来时，你会发现首页已经更新了新的焦点，而你之前浏览过的内容依然可以回溯。
+                不需要重新适应——界面还是那个界面，但消息是新的。
+            </p>
+        </section>
+
+        <!-- FAQ 摘要 -->
+        <section class="section">
+            <h2 class="heading">常见想法</h2>
+
+            <div class="faq-item">
+                <div class="faq-q">「我需要注册才能继续使用吗？」</div>
+                <div class="faq-a">不需要。浏览绝大部分内容无需登录，收藏功能在本地即可完成。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">「我上次看到一半的页面还能找到吗？」</div>
+                <div class="faq-a">如果你使用了浏览器的书签或历史，当然可以。我们也在考虑更自然的回溯方式。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">「为什么值得再次访问？」</div>
+                <div class="faq-a">因为赛事在继续，数据在刷新，而你不必每次都从头开始。氛围是熟悉的，内容是流动的。</div>
+            </div>
+            <p class="text-sm text-muted" style="margin-top: 1.2rem;">
+                如果你有更多问题，欢迎随时回来看看。改变往往来自细微的积累。
+            </p>
+        </section>
+
+        <!-- 底部链接 -->
+        <footer class="footer-note">
+            <span>© 雷竞技 · 持续关注</span>
+            <div class="footer-links">
+                <span><a href="https://beta-raygaming.com">雷竞技</a></span>
+                <span>书签提示</span>
+                <span>再次光临</span>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
